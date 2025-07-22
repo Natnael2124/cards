@@ -2,7 +2,8 @@ import random
 cards =["jack","queen","king"]
 
 def main():
-    card = random.sample(cards,k=2)
+    random.seed(2)
+    card = random.choices(cards,weights=[50,25,25],k=2)
     print(card)
 
 
